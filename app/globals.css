@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+
+  /* Genoveq Palette - Medical Theme */
+  --color-genoveq-blue-50: #f0f7ff;
+  --color-genoveq-blue-100: #e0f0fe;
+  --color-genoveq-blue-200: #bae3fd;
+  --color-genoveq-blue-300: #7ccbfd;
+  --color-genoveq-blue-400: #36b2fa;
+  --color-genoveq-blue-500: #0c99eb;
+  --color-genoveq-blue-600: #007ac9;
+  --color-genoveq-blue-700: #0161a3;
+  --color-genoveq-blue-800: #065386;
+  --color-genoveq-blue-900: #0a456f;
+  /* Deep Corporate Blue */
+  --color-genoveq-blue-950: #002E6D;
+  /* User requested Navbar BG */
+
+  --color-genoveq-gold-50: #fbf8e8;
+  --color-genoveq-gold-100: #f6efca;
+  --color-genoveq-gold-200: #edde9a;
+  --color-genoveq-gold-300: #e3cc6a;
+  --color-genoveq-gold-400: #d4af37;
+  --color-genoveq-gold-500: #b5952f;
+  --color-genoveq-gold-600: #937826;
+  --color-genoveq-gold-700: #735d1e;
+  --color-genoveq-gold-800: #534316;
+  --color-genoveq-gold-900: #33290e;
+  --color-genoveq-gold-950: #1a1507;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sarabun), var(--font-inter), sans-serif;
+  --font-kanit: var(--font-kanit), var(--font-prompt), sans-serif;
+
+  --color-primary: var(--color-genoveq-blue-900);
+  --color-secondary: var(--color-genoveq-gold-500);
+
+  /* Genoveq Colors */
+  --color-genoveq-blue-50: var(--color-genoveq-blue-50);
+  --color-genoveq-blue-100: var(--color-genoveq-blue-100);
+  --color-genoveq-blue-200: var(--color-genoveq-blue-200);
+  --color-genoveq-blue-300: var(--color-genoveq-blue-300);
+  --color-genoveq-blue-400: var(--color-genoveq-blue-400);
+  --color-genoveq-blue-500: var(--color-genoveq-blue-500);
+  --color-genoveq-blue-600: var(--color-genoveq-blue-600);
+  --color-genoveq-blue-700: var(--color-genoveq-blue-700);
+  --color-genoveq-blue-800: var(--color-genoveq-blue-800);
+  --color-genoveq-blue-900: var(--color-genoveq-blue-900);
+  --color-genoveq-blue-950: var(--color-genoveq-blue-950);
+
+  /* Genoveq Gold Theme */
+  --color-genoveq-gold-50: var(--color-genoveq-gold-50);
+  --color-genoveq-gold-100: var(--color-genoveq-gold-100);
+  --color-genoveq-gold-200: var(--color-genoveq-gold-200);
+  --color-genoveq-gold-300: var(--color-genoveq-gold-300);
+  --color-genoveq-gold-400: var(--color-genoveq-gold-400);
+  --color-genoveq-gold-500: var(--color-genoveq-gold-500);
+  --color-genoveq-gold-600: var(--color-genoveq-gold-600);
+  --color-genoveq-gold-700: var(--color-genoveq-gold-700);
+  --color-genoveq-gold-800: var(--color-genoveq-gold-800);
+  --color-genoveq-gold-900: var(--color-genoveq-gold-900);
+  --color-genoveq-gold-950: var(--color-genoveq-gold-950);
+  --color-genoveq-gold-1000: var(--color-genoveq-gold-1000);
+
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+}
+
+.bg-gold-gradient {
+  background-image: linear-gradient(135deg, var(--color-genoveq-gold-400), var(--color-genoveq-gold-600));
+}
+
+.bg-gold-logo {
+  background-image: linear-gradient(135deg, var(--color-genoveq-gold-400), var(--color-genoveq-gold-500));
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sarabun), var(--font-inter), sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-kanit), var(--font-prompt), sans-serif;
+}
